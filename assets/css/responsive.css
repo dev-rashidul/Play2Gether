@@ -1,0 +1,94 @@
+/* Responsive CSS */
+
+/* Min Width 1200px and Max Width 1399px */
+@media (min-width: 1200px) and (max-width: 1399px) {
+}
+
+/* Min Width 992px and Max Width 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .administration-content h2 {
+    font-size: 40px;
+  }
+
+  .administration-content p {
+    font-size: 18px;
+  }
+
+  .join-btn a {
+    font-size: 26px;
+  }
+
+  .imprint-content-title h2 {
+    font-size: 36px;
+  }
+
+  .discord-join-btn a i {
+    margin-left: 10px;
+  }
+}
+
+/* Min Width 768px and Max Width 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .administration-content {
+    padding: 100px 0 50px;
+  }
+
+  .administration-content h2 {
+    font-size: 36px;
+  }
+
+  .administration-content p {
+    font-size: 18px;
+  }
+
+  .join-btn a {
+    font-size: 22px;
+  }
+
+  .imprint-content-title h2 {
+    font-size: 30px;
+  }
+
+  .discord-join-btn a i {
+    margin-left: 0px;
+  }
+}
+
+/* Min Width 300px and Max Width 767px */
+@media (min-width: 300px) and (max-width: 767px) {
+  .navbar {
+    padding: 20px 0 !important;
+    background: #1f1f1f;
+  }
+
+  .administration-content {
+    padding: 100px 0 50px;
+  }
+
+  .administration-content h2 {
+    font-size: 30px;
+  }
+
+  .administration-content p {
+    font-size: 16px;
+  }
+
+  .join-btn a,
+  .join-btn a i,
+  .footer-abuot a,
+  .join-discord h5 {
+    font-size: 20px;
+  }
+
+  .imprint-content-title h2 {
+    font-size: 26px;
+  }
+
+  .discord-join-btn a i {
+    margin-left: 0px;
+  }
+
+  .footer-wrapper {
+    padding-bottom: 60px;
+  }
+}
