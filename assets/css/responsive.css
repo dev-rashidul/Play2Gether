@@ -2,10 +2,27 @@
 
 /* Min Width 1200px and Max Width 1399px */
 @media (min-width: 1200px) and (max-width: 1399px) {
+  .game-card-img img {
+    min-height: 220px;
+    max-height: 220px;
+    height: 100%;
+  }
 }
 
 /* Min Width 992px and Max Width 1199px */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .hero-content h1 {
+    font-size: 60px;
+  }
+
+  .hero-content h3 {
+    font-size: 28px;
+  }
+
+  .donator-content h2 {
+    font-size: 48px;
+  }
+
   .administration-content h2 {
     font-size: 40px;
   }
@@ -29,11 +46,62 @@
 
 /* Min Width 768px and Max Width 991px */
 @media (min-width: 768px) and (max-width: 991px) {
+  .hero-wrapper {
+    padding: 150px 0 100px;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-content h3 {
+    font-size: 28px;
+  }
+
+  .donator-content h2 {
+    font-size: 40px;
+  }
+
+  .donator-btn a,
+  .donator-btn a i {
+    font-size: 20px;
+  }
+
+  .basic,
+  .booster,
+  .donator1,
+  .donator2,
+  .donator3 {
+    padding: 0 10px;
+  }
+
+  .support-table tbody tr td {
+    padding: 8px 10px;
+  }
+
+  table tr > th:first-child,
+  table tr > td:first-child {
+    background: #343434;
+  }
+
+  .basic h3,
+  .booster h3,
+  .donator1 h3,
+  .donator2 h3,
+  .donator3 h3 {
+    font-size: 24px;
+  }
+
+  .stats-line::after {
+    display: none;
+  }
+
   .administration-content {
     padding: 100px 0 50px;
   }
 
-  .administration-content h2 {
+  .administration-content h2,
+  .game-title h2 {
     font-size: 36px;
   }
 
@@ -61,11 +129,71 @@
     background: #1f1f1f;
   }
 
+  .hero-wrapper {
+    padding: 180px 0 100px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content h3 {
+    font-size: 22px;
+  }
+
+  .game-card-img img {
+    min-height: 400px;
+    max-height: 400px;
+    height: 100%;
+    object-fit: initial;
+  }
+
+  .donator-content h2,
+  .game-title h2,
+  .support-title h2 {
+    font-size: 30px;
+  }
+
+  .donator-btn a,
+  .donator-btn a i {
+    font-size: 20px;
+  }
+
+  table tr > th:first-child,
+  table tr > td:first-child {
+    background: #343434;
+  }
+
+  .basic,
+  .booster,
+  .donator1,
+  .donator2,
+  .donator3 {
+    padding: 0 10px;
+  }
+
+  .support-table tbody tr td {
+    padding: 8px 10px;
+  }
+
+  .basic h3,
+  .booster h3,
+  .donator1 h3,
+  .donator2 h3,
+  .donator3 h3 {
+    font-size: 24px;
+  }
+
+  .stats-line::after {
+    display: none;
+  }
+
   .administration-content {
     padding: 100px 0 50px;
   }
 
-  .administration-content h2 {
+  .administration-content h2,
+  .rules-content-title h2 {
     font-size: 30px;
   }
 
