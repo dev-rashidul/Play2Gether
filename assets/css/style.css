@@ -176,10 +176,23 @@ nav.navbar {
 /* Hero Section CSS Start */
 
 .hero-wrapper {
+  position: relative;
   background: url(../images/hero-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 200px 0 100px;
+  padding: 200px 0 150px;
+  overflow: hidden;
+}
+
+.hero-wrapper::after {
+  position: absolute;
+  content: "";
+  left: -10px;
+  bottom: -25px;
+  width: 105%;
+  height: 50px;
+  background: #141316;
+  transform: rotate(-1deg);
 }
 
 .hero-content h1 {
@@ -212,7 +225,7 @@ nav.navbar {
 }
 
 .donator-img img {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .donator-img img:hover {
@@ -388,7 +401,6 @@ nav.navbar {
 
 .stats-card-content p {
   font-size: 12px;
-  line-height: 27.5px;
   color: #adadb8;
   margin-bottom: 0;
 }

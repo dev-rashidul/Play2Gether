@@ -11,12 +11,23 @@
 
 /* Min Width 992px and Max Width 1199px */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .game-card-img img {
+    min-height: 300px;
+    max-height: 300px;
+    height: 100%;
+    object-fit: initial;
+  }
+
   .hero-content h1 {
     font-size: 60px;
   }
 
   .hero-content h3 {
     font-size: 28px;
+  }
+
+  .stats-card {
+    height: 80px;
   }
 
   .donator-content h2 {
@@ -58,6 +69,13 @@
     font-size: 28px;
   }
 
+  .game-card-img img {
+    min-height: 300px;
+    max-height: 300px;
+    height: 100%;
+    object-fit: initial;
+  }
+
   .donator-content h2 {
     font-size: 40px;
   }
@@ -92,8 +110,17 @@
     font-size: 24px;
   }
 
+  .stats-card {
+    height: 80px;
+  }
+
   .stats-line::after {
     display: none;
+  }
+
+  .donator-img,
+  .donator-content {
+    text-align: center;
   }
 
   .administration-content {
@@ -146,6 +173,14 @@
     max-height: 200px;
     height: 100%;
     object-fit: initial;
+  }
+
+  .stats-card {
+    height: initial;
+  }
+
+  .stats-card-icon {
+    margin-right: 0;
   }
 
   .donator-content h2,
