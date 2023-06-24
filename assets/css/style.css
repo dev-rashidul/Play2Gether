@@ -48,30 +48,17 @@ nav.navbar {
   width: 100%;
   padding: 40px 0;
   z-index: 999;
+  transition: 0.4s ease-in-out;
 }
 
 .navbar.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: #1f1f1f;
-  padding: 20px 0;
-  z-index: 999;
-  -webkit-animation: sticky 1.2s;
-  animation: sticky 1.2s;
+  background: #1b1b1b79;
+  padding: 15px 0px;
+  backdrop-filter: blur(15px) brightness(75%) saturate(70%);
 }
 
-@keyframes sticky {
-  from {
-    top: -100px;
-  }
-  to {
-    top: 0;
-  }
-}
-
-.nav-link {
+.nav-link,
+.nav-link:focus {
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
