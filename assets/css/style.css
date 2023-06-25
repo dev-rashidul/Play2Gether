@@ -157,6 +157,16 @@ nav.navbar {
     padding-top: 18px;
   }
 
+  .navbar {
+    background: #1b1b1b79;
+    padding: 20px 0px !important;
+    backdrop-filter: blur(15px) brightness(75%) saturate(70%);
+  }
+
+  .navbar.sticky {
+    padding: 15px 0px !important;
+  }
+
   .navbar-nav {
     padding-top: 25px;
   }
@@ -303,6 +313,14 @@ nav.navbar {
 
 .game-card-img {
   position: relative;
+  border: 2px solid transparent;
+  border-radius: 7px;
+  transition: border 0.2s ease-in, all 0.4s cubic-bezier(0, 0, 0, 1);
+}
+
+.game-card-img:hover {
+  opacity: 1;
+  border: 2px solid #f1465a !important;
 }
 
 .game-card-img::after {
@@ -313,9 +331,8 @@ nav.navbar {
   width: 100%;
   height: 100%;
   background: #f1465a36;
-  border: 2px solid #f1465a;
-  border-radius: 5px;
   display: none;
+  transition: all 0.2s ease;
 }
 
 .game-card:hover .game-card-img::after {
@@ -567,6 +584,26 @@ tr {
 
 .rules-content-wrapper {
   padding-top: 90px;
+}
+
+.rules-content {
+  height: 700px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0, 0, 0, 1);
+}
+
+.rules-content.active {
+  height: auto;
+  box-shadow: none;
+}
+
+#expand-btn i {
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0, 0, 0, 1);
+}
+
+#expand-btn.active i {
+  transform: rotate(180deg) !important;
 }
 
 .rules-content-title h2 {

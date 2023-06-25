@@ -131,7 +131,7 @@
               <h2>Spiele</h2>
             </div>
             <div class="row">
-              <div class="col-6 col-lg-4 col-xl-2">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="game-card">
                   <div class="game-card-img">
                     <img
@@ -145,7 +145,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-lg-4 col-xl-2">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="game-card">
                   <div class="game-card-img">
                     <img
@@ -159,7 +159,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-lg-4 col-xl-2">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="game-card">
                   <div class="game-card-img">
                     <img
@@ -173,7 +173,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-lg-4 col-xl-2">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="game-card">
                   <div class="game-card-img">
                     <img
@@ -187,7 +187,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-lg-4 col-xl-2">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="game-card">
                   <div class="game-card-img">
                     <img
@@ -201,7 +201,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-lg-4 col-xl-2">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="game-card">
                   <div class="game-card-img">
                     <img
@@ -215,7 +215,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-lg-4 col-xl-2">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="game-card">
                   <div class="game-card-img">
                     <img
@@ -229,7 +229,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-lg-4 col-xl-2">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="game-card">
                   <div class="game-card-img">
                     <img
@@ -243,7 +243,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-lg-4 col-xl-2">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="game-card">
                   <div class="game-card-img">
                     <img
@@ -257,7 +257,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-lg-4 col-xl-2">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="game-card">
                   <div class="game-card-img">
                     <img src="assets/images/fifa-img.jpg" alt="fifa-img" />
@@ -268,7 +268,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-lg-4 col-xl-2">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="game-card">
                   <div class="game-card-img">
                     <img
@@ -282,7 +282,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-lg-4 col-xl-2">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="game-card">
                   <div class="game-card-img">
                     <img
@@ -611,7 +611,12 @@
           <div class="container">
             <div class="rules-content">
               <div class="rules-content-title">
-                <h2>REGELWERK</h2>
+                <h2>
+                  REGELWERK
+                  <span id="expand-btn"
+                    ><i class="fa-solid fa-chevron-down"></i
+                  ></span>
+                </h2>
               </div>
               <ul class="rules-content-box">
                 <h3>§1 Allgemeine Verhaltensregeln</h3>
@@ -855,5 +860,15 @@
 
     <!-- Custom JavaScript -->
     <script src="assets/js/script.js"></script>
+
+    <script>
+      const rulesContent = document.querySelector(".rules-content");
+      const expandBtn = document.getElementById("expand-btn");
+
+      expandBtn.addEventListener("click", () => {
+        expandBtn.classList.toggle("active");
+        rulesContent.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
