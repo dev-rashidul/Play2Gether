@@ -36,3 +36,14 @@ $(window).scroll(function () {
     counted = 1;
   }
 });
+
+
+// Rules Expand JS
+
+const rulesContent = document.querySelector(".rules-content");
+const expandBtn = document.getElementById("expand-btn");
+
+expandBtn.addEventListener("click", () => {
+  expandBtn.classList.toggle("active");
+  rulesContent.classList.toggle("active");
+});

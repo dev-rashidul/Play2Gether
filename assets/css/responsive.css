@@ -168,6 +168,12 @@
     text-align: center;
   }
 
+  .game-card {
+    max-width: 90%;
+    width: 100%;
+    margin: auto;
+  }
+
   .game-card-img img {
     min-height: 200px;
     max-height: 200px;
@@ -231,6 +237,10 @@
 
   .stats-line::after {
     display: none;
+  }
+
+  .rules-content::after {
+    bottom: 0;
   }
 
   .administration-content {
