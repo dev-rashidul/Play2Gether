@@ -37,7 +37,6 @@ $(window).scroll(function () {
   }
 });
 
-
 // Rules Expand JS
 
 const rulesContent = document.querySelector(".rules-content");

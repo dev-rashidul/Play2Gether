@@ -827,3 +827,390 @@ Imprint Page CSS
 }
 
 /* Imprint Content Section CSS End */
+
+/* ===========***============
+Minecraft Page CSS
+===========***============ */
+
+/* Minecraft Hero Section CSS Start */
+
+.minecraft-hero-wrapper {
+  position: relative;
+  background: url(../images/minecraft-hero-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 600px;
+  max-height: 600px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.minecraft-hero-wrapper::after {
+  position: absolute;
+  content: "";
+  left: -10px;
+  bottom: -25px;
+  width: 105%;
+  height: 50px;
+  background: #141316;
+  transform: rotate(-1deg);
+}
+
+/* Minecraft Hero Section CSS End */
+
+/* Minecraft Stats Section CSS Start */
+
+.minecraft-stats-container {
+  position: relative;
+  margin-top: -170px;
+}
+
+.minecraft-hero-img img {
+  max-width: 100%;
+  width: 100%;
+  min-height: 375px;
+  max-height: 375px;
+  height: 100%;
+}
+
+.minecraft-hero-card {
+  text-align: center;
+  padding: 25px 80px 20px;
+  margin: 10px 0 0 50px;
+  background: linear-gradient(180deg, rgba(20, 19, 22, 0.2) 0%, #141316 100%);
+  box-shadow: 0px 4px 10px 0px rgba(20, 19, 22, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+}
+
+.minecraft-title h3 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27.5px;
+  color: #fff;
+}
+
+.mine-craft-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(20, 20, 20, 0.6);
+  padding: 12px 20px;
+  margin: 20px 0 50px;
+  border-radius: 90px;
+}
+
+.online-stats p,
+.member-stats p {
+  position: relative;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.5px;
+  color: #adadb8;
+  margin: 0;
+}
+
+.online-stats p,
+.member-stats p {
+  padding-left: 15px;
+}
+
+.online-stats p::after,
+.member-stats p::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: #23a559;
+  border-radius: 100%;
+}
+
+.member-stats p::after {
+  background: #80848e;
+}
+
+.discord-btn a {
+  display: block;
+  width: 100%;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  padding: 6px 25px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: #5865f2;
+  border-radius: 13px;
+  transition: all 0.3s ease-in-out;
+}
+
+.discord-btn a i {
+  padding-left: 10px;
+}
+
+.discord-btn a:hover {
+  opacity: 0.8;
+}
+
+.buy-now-btn a {
+  display: block;
+  width: 100%;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  padding: 12px 25px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: linear-gradient(94.32deg, #f1465a 0%, #fab237 100%);
+  border-radius: 13px;
+  transition: all 0.3s ease-in-out;
+}
+
+.buy-now-btn a i {
+  font-size: 36px;
+}
+
+.buy-now-btn a:hover {
+  opacity: 0.8;
+}
+
+.reflink-btn {
+  padding-top: 10px;
+}
+
+.reflink-btn a {
+  display: block;
+  font-size: 15px;
+  text-align: left;
+  color: #adadb8;
+}
+
+/* Minecraft Stats Section CSS End */
+
+/* Minecrat Slider Section CSS Start */
+
+.minecraft-slider-wrapper {
+  padding-top: 50px;
+}
+
+.minecraft-slider-top h2 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 3.2px;
+  color: #fff;
+  margin: 0;
+}
+
+.minecraft-slider-top p {
+  font-size: 16px;
+  color: #adadb8;
+}
+
+.minecraft-slide-img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.minecraft-slide-img:hover {
+  transform: scale(1.075);
+  border-radius: 20px;
+}
+
+.minecraft-slide-img {
+  width: 100%;
+  min-height: 170px;
+  max-height: 170px;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.minecraft-slide-content {
+  padding-top: 20px;
+}
+
+.minecraft-slide-content p {
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+}
+
+.minecraft-slide-content h6 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.minecraft-slide-content span {
+  color: #fff;
+  font-size: 11px;
+}
+
+.owl-carousel .owl-stage-outer {
+  padding: 20px 0;
+}
+
+.owl-carousel .owl-nav.disabled {
+  display: block;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 35%;
+  transform: translate(-50%);
+}
+
+.owl-prev {
+  left: 5px;
+}
+
+.owl-next {
+  right: -14px;
+}
+
+.owl-prev i,
+.owl-next i {
+  font-size: 30px;
+  color: #fff;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover:hover {
+  background: none;
+}
+
+/* Minecrat Slider Section CSS End */
+
+/* Cheap Skin Section CSS Start */
+
+.cheap-skin-wrapper {
+  padding-top: 40px;
+}
+
+.cheap-skin-content h2 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 3.2px;
+  color: #fff;
+  margin: 0;
+}
+
+.cheap-skin-content p {
+  font-size: 16px;
+  color: #adadb8;
+}
+
+.cheap-skin-img {
+  padding-top: 20px;
+}
+
+.cheap-skin-img img {
+  width: 100%;
+  min-height: 180px;
+  max-height: 180px;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.cheap-skin-img span {
+  color: #fff;
+  font-size: 11px;
+}
+
+/* Cheap Skin Section CSS End */
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .minecraft-slide-img {
+    min-height: 50%;
+    max-height: 50%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .minecraft-hero-img img,
+  .minecraft-slide-img {
+    min-height: 50%;
+    max-height: 50%;
+    height: 100%;
+  }
+
+  .minecraft-hero-card {
+    padding: 25px 50px 0;
+  }
+
+  .discord-btn a,
+  .discord-btn a i,
+  .buy-now-btn a i {
+    font-size: 28px;
+  }
+
+  .buy-now-btn a {
+    font-size: 22px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .minecraft-hero-img img,
+  .minecraft-slide-img {
+    min-height: 50%;
+    max-height: 50%;
+    height: 100%;
+  }
+
+  .minecraft-slider-top h2,
+  .cheap-skin-content h2 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .minecraft-hero-wrapper {
+    min-height: 500px;
+    max-height: 500px;
+    height: 100%;
+  }
+
+  .minecraft-hero-img img,
+  .minecraft-slide-img {
+    min-height: 50%;
+    max-height: 50%;
+    height: 100%;
+  }
+
+  .minecraft-hero-card {
+    margin-left: 0;
+    padding: 25px 10px 0;
+  }
+
+  .mine-craft-stats {
+    padding: 10px 0;
+  }
+
+  .discord-btn a,
+  .discord-btn a i,
+  .buy-now-btn a i {
+    font-size: 28px;
+  }
+
+  .buy-now-btn a {
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  .minecraft-slider-top h2,
+  .cheap-skin-content h2 {
+    font-size: 28px;
+  }
+
+  .cheap-skin-img img {
+    min-height: 100px;
+    max-height: 100px;
+    height: 100%;
+  }
+}
