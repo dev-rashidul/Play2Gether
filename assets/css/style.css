@@ -1016,11 +1016,8 @@ Minecraft Page CSS
 }
 
 .minecraft-slide-img {
-  transition: transform 0.3s ease-in-out;
-}
-
-.minecraft-slide-img-last {
   padding-right: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .minecraft-slide-img:hover {
