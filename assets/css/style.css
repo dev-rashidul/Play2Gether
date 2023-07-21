@@ -836,7 +836,7 @@ Minecraft Page CSS
 
 .minecraft-hero-wrapper {
   position: relative;
-  background: url(../images/minecraft-hero-bg.png);
+  background: url(../images/minecraft-hero-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -864,6 +864,7 @@ Minecraft Page CSS
 .minecraft-stats-container {
   position: relative;
   margin-top: -170px;
+  padding-bottom: 50px;
 }
 
 .minecraft-hero-img img {
@@ -872,12 +873,13 @@ Minecraft Page CSS
   min-height: 375px;
   max-height: 375px;
   height: 100%;
+  border-radius: 15px;
 }
 
 .minecraft-hero-card {
   text-align: center;
   padding: 25px 80px 20px;
-  margin: 10px 0 0 50px;
+  margin-left: 50px;
   background: linear-gradient(180deg, rgba(20, 19, 22, 0.2) 0%, #141316 100%);
   box-shadow: 0px 4px 10px 0px rgba(20, 19, 22, 0.1);
   backdrop-filter: blur(15px);
@@ -893,12 +895,14 @@ Minecraft Page CSS
 }
 
 .mine-craft-stats {
+  max-width: 320px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: rgba(20, 20, 20, 0.6);
   padding: 12px 20px;
-  margin: 20px 0 50px;
+  margin: 20px auto 50px;
   border-radius: 90px;
 }
 
@@ -1020,7 +1024,7 @@ Minecraft Page CSS
   border-radius: 20px;
 }
 
-.minecraft-slide-img {
+.minecraft-slide-img img {
   width: 100%;
   min-height: 170px;
   max-height: 170px;
@@ -1066,16 +1070,16 @@ Minecraft Page CSS
 }
 
 .owl-prev {
-  left: 5px;
+  left: -12px;
 }
 
 .owl-next {
-  right: -14px;
+  right: -25px;
 }
 
 .owl-prev i,
 .owl-next i {
-  font-size: 30px;
+  font-size: 20px;
   color: #fff;
 }
 
@@ -1124,7 +1128,7 @@ Minecraft Page CSS
 /* Cheap Skin Section CSS End */
 
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .minecraft-slide-img {
+  .minecraft-slide-img img {
     min-height: 50%;
     max-height: 50%;
     height: 100%;
@@ -1133,7 +1137,7 @@ Minecraft Page CSS
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .minecraft-hero-img img,
-  .minecraft-slide-img {
+  .minecraft-slide-img img {
     min-height: 50%;
     max-height: 50%;
     height: 100%;
@@ -1157,7 +1161,7 @@ Minecraft Page CSS
 
 @media (min-width: 768px) and (max-width: 991px) {
   .minecraft-hero-img img,
-  .minecraft-slide-img {
+  .minecraft-slide-img img {
     min-height: 50%;
     max-height: 50%;
     height: 100%;
@@ -1177,10 +1181,14 @@ Minecraft Page CSS
   }
 
   .minecraft-hero-img img,
-  .minecraft-slide-img {
+  .minecraft-slide-img img {
     min-height: 50%;
     max-height: 50%;
     height: 100%;
+  }
+
+  .minecraft-slide-img {
+    padding: 0 10px;
   }
 
   .minecraft-hero-card {
@@ -1189,6 +1197,9 @@ Minecraft Page CSS
   }
 
   .mine-craft-stats {
+    max-width: 280px;
+    width: 100%;
+    margin: 20px auto 30px;
     padding: 10px 0;
   }
 
@@ -1209,8 +1220,16 @@ Minecraft Page CSS
   }
 
   .cheap-skin-img img {
-    min-height: 100px;
-    max-height: 100px;
+    min-height: 80px;
+    max-height: 80px;
     height: 100%;
+  }
+
+  .owl-prev {
+    left: -5px;
+  }
+
+  .owl-next {
+    right: -18px;
   }
 }
