@@ -1232,4 +1232,8 @@ Minecraft Page CSS
   .owl-next {
     right: -18px;
   }
+
+  .owl-carousel .owl-stage-outer {
+    padding: 0;
+  }
 }
