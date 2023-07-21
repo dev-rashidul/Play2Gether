@@ -1055,7 +1055,7 @@ Minecraft Page CSS
 }
 
 .owl-carousel .owl-stage-outer {
-  padding: 10px 10px 0 10px;
+  padding: 20px 10px 0 10px;
 }
 
 .owl-carousel .owl-nav.disabled {
@@ -1234,6 +1234,6 @@ Minecraft Page CSS
   }
 
   .owl-carousel .owl-stage-outer {
-    padding: 0;
+    padding: 20px 0 0 0;
   }
 }
