@@ -895,7 +895,7 @@ Minecraft Page CSS
 }
 
 .mine-craft-stats {
-  max-width: 320px;
+  max-width: 350px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -904,6 +904,14 @@ Minecraft Page CSS
   padding: 12px 20px;
   margin: 20px auto 50px;
   border-radius: 90px;
+}
+
+.online-stats {
+  padding-right: 20px;
+}
+
+.member-stats {
+  padding-left: 20px;
 }
 
 .online-stats p,
@@ -1016,6 +1024,7 @@ Minecraft Page CSS
 }
 
 .minecraft-slide-img {
+  padding-left: 5px;
   padding-right: 20px;
   transition: transform 0.3s ease-in-out;
 }
@@ -1034,7 +1043,7 @@ Minecraft Page CSS
 }
 
 .minecraft-slide-content {
-  padding-top: 20px;
+  padding: 20px 20px 0 5px;
 }
 
 .minecraft-slide-content p {
@@ -1071,11 +1080,11 @@ Minecraft Page CSS
 }
 
 .owl-prev {
-  left: 0;
+  left: -10px;
 }
 
 .owl-next {
-  right: -15px;
+  right: -30px;
 }
 
 .owl-prev i,
@@ -1192,13 +1201,22 @@ Minecraft Page CSS
     padding: 0 10px;
   }
 
+  .minecraft-slide-content {
+    padding: 10px;
+  }
+
+  .minecraft-slide-content p,
+  .minecraft-slide-content h6 {
+    font-size: 14px;
+  }
+
   .minecraft-hero-card {
     margin-left: 0;
     padding: 25px 10px 0;
   }
 
   .mine-craft-stats {
-    max-width: 280px;
+    max-width: 300px;
     width: 100%;
     margin: 20px auto 30px;
     padding: 10px 0;
@@ -1227,11 +1245,11 @@ Minecraft Page CSS
   }
 
   .owl-prev {
-    left: -5px;
+    left: -8px;
   }
 
   .owl-next {
-    right: -18px;
+    right: -22px;
   }
 
   .owl-carousel .owl-stage-outer {
