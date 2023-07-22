@@ -895,10 +895,8 @@ Minecraft Page CSS
 }
 
 .mine-craft-stats {
-  max-width: 350px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
   background: rgba(20, 20, 20, 0.6);
   padding: 12px 20px;
@@ -907,11 +905,11 @@ Minecraft Page CSS
 }
 
 .online-stats {
-  padding-right: 20px;
+  padding: 0 10px;
 }
 
 .member-stats {
-  padding-left: 20px;
+  padding: 0 10px;
 }
 
 .online-stats p,
@@ -1207,7 +1205,7 @@ Minecraft Page CSS
 
   .minecraft-slide-content p,
   .minecraft-slide-content h6 {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .minecraft-hero-card {
@@ -1216,8 +1214,6 @@ Minecraft Page CSS
   }
 
   .mine-craft-stats {
-    max-width: 300px;
-    width: 100%;
     margin: 20px auto 30px;
     padding: 10px 0;
   }
@@ -1254,5 +1250,12 @@ Minecraft Page CSS
 
   .owl-carousel .owl-stage-outer {
     padding: 20px 0 0 0;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 575px) {
+  .minecraft-slide-content p,
+  .minecraft-slide-content h6 {
+    font-size: 14px;
   }
 }
